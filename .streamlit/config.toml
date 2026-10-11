@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor = "#24547a"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false

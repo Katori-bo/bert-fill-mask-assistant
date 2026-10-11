@@ -1,0 +1,14 @@
+[
+  {"text": "The capital of France is [MASK].", "expected": "paris"},
+  {"text": "The capital of Germany is [MASK].", "expected": "berlin"},
+  {"text": "The capital of Italy is [MASK].", "expected": "rome"},
+  {"text": "The sun rises in the [MASK].", "expected": "east"},
+  {"text": "The sun sets in the [MASK].", "expected": "west"},
+  {"text": "A week has seven [MASK].", "expected": "days"},
+  {"text": "There are twelve months in a [MASK].", "expected": "year"},
+  {"text": "She drank a glass of [MASK].", "expected": "water"},
+  {"text": "The student opened the [MASK] to read.", "expected": "book"},
+  {"text": "The teacher wrote on the [MASK].", "expected": "board"},
+  {"text": "The opposite of hot is [MASK].", "expected": "cold"},
+  {"text": "Birds can fly in the [MASK].", "expected": "sky"}
+]
