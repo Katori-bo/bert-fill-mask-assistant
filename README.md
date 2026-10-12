@@ -73,6 +73,10 @@ Unit tests check invalid inputs, encoded mask handling, length limits, and the i
 
 `evaluate.py` runs real inference on 12 hand-authored sentences in `examples/evaluation_set.json`. Each original target must be one tokenizer token. The script writes `examples/sample_results.json` and reports top-1 and top-5 exact target-token recovery. These examples are a **small demonstration set, not a benchmark**. Another completion can be reasonable even when it differs from the original target, so human acceptability should be assessed separately.
 
+## Recorded demonstration
+
+Real CPU inference was completed on 12 October 2026. On the 12 fixed examples, BERT recovered the original token in **6/12 top-1 predictions (50.0%)** and **10/12 top-5 lists (83.3%)**. [Recorded predictions](examples/sample_results.json) include the checkpoint revision and each candidate score. These results describe only this small demonstration set; they are not a general accuracy estimate. No fine-tuning was performed.
+
 ## Limitations
 
 - One mask predicts one vocabulary token, which may be a subword rather than a complete word.

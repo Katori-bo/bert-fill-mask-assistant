@@ -1,0 +1,548 @@
+{
+  "scope": "12 hand-authored demonstration sentences; exact target-token recovery, not a benchmark",
+  "count": 12,
+  "top1_accuracy": 0.5,
+  "top5_accuracy": 0.8333333333333334,
+  "records": [
+    {
+      "text": "The capital of France is [MASK].",
+      "expected": "paris",
+      "top1_correct": true,
+      "top5_correct": true,
+      "result": {
+        "input": "The capital of France is [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 3000,
+            "token_str": "paris",
+            "score": 0.4167884290218353,
+            "sequence": "the capital of france is paris."
+          },
+          {
+            "token": 22479,
+            "token_str": "lille",
+            "score": 0.07141678780317307,
+            "sequence": "the capital of france is lille."
+          },
+          {
+            "token": 10241,
+            "token_str": "lyon",
+            "score": 0.06339287012815475,
+            "sequence": "the capital of france is lyon."
+          },
+          {
+            "token": 16766,
+            "token_str": "marseille",
+            "score": 0.044447507709264755,
+            "sequence": "the capital of france is marseille."
+          },
+          {
+            "token": 7562,
+            "token_str": "tours",
+            "score": 0.03029724396765232,
+            "sequence": "the capital of france is tours."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.1255
+      }
+    },
+    {
+      "text": "The capital of Germany is [MASK].",
+      "expected": "berlin",
+      "top1_correct": false,
+      "top5_correct": true,
+      "result": {
+        "input": "The capital of Germany is [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 19349,
+            "token_str": "bonn",
+            "score": 0.14363504946231842,
+            "sequence": "the capital of germany is bonn."
+          },
+          {
+            "token": 4068,
+            "token_str": "berlin",
+            "score": 0.131118506193161,
+            "sequence": "the capital of germany is berlin."
+          },
+          {
+            "token": 11222,
+            "token_str": "leipzig",
+            "score": 0.08230312168598175,
+            "sequence": "the capital of germany is leipzig."
+          },
+          {
+            "token": 8719,
+            "token_str": "hamburg",
+            "score": 0.07168775051832199,
+            "sequence": "the capital of germany is hamburg."
+          },
+          {
+            "token": 14393,
+            "token_str": "hanover",
+            "score": 0.05535512417554855,
+            "sequence": "the capital of germany is hanover."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0902
+      }
+    },
+    {
+      "text": "The capital of Italy is [MASK].",
+      "expected": "rome",
+      "top1_correct": true,
+      "top5_correct": true,
+      "result": {
+        "input": "The capital of Italy is [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 4199,
+            "token_str": "rome",
+            "score": 0.21496883034706116,
+            "sequence": "the capital of italy is rome."
+          },
+          {
+            "token": 6954,
+            "token_str": "milan",
+            "score": 0.16791805624961853,
+            "sequence": "the capital of italy is milan."
+          },
+          {
+            "token": 13667,
+            "token_str": "turin",
+            "score": 0.12322532385587692,
+            "sequence": "the capital of italy is turin."
+          },
+          {
+            "token": 10553,
+            "token_str": "naples",
+            "score": 0.0736490860581398,
+            "sequence": "the capital of italy is naples."
+          },
+          {
+            "token": 7701,
+            "token_str": "florence",
+            "score": 0.06947744637727737,
+            "sequence": "the capital of italy is florence."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0816
+      }
+    },
+    {
+      "text": "The sun rises in the [MASK].",
+      "expected": "east",
+      "top1_correct": false,
+      "top5_correct": true,
+      "result": {
+        "input": "The sun rises in the [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 3712,
+            "token_str": "sky",
+            "score": 0.66619873046875,
+            "sequence": "the sun rises in the sky."
+          },
+          {
+            "token": 2225,
+            "token_str": "west",
+            "score": 0.10482041537761688,
+            "sequence": "the sun rises in the west."
+          },
+          {
+            "token": 2264,
+            "token_str": "east",
+            "score": 0.09498397260904312,
+            "sequence": "the sun rises in the east."
+          },
+          {
+            "token": 3292,
+            "token_str": "distance",
+            "score": 0.04980548098683357,
+            "sequence": "the sun rises in the distance."
+          },
+          {
+            "token": 2851,
+            "token_str": "morning",
+            "score": 0.02118031308054924,
+            "sequence": "the sun rises in the morning."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0809
+      }
+    },
+    {
+      "text": "The sun sets in the [MASK].",
+      "expected": "west",
+      "top1_correct": false,
+      "top5_correct": true,
+      "result": {
+        "input": "The sun sets in the [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 3712,
+            "token_str": "sky",
+            "score": 0.2671014070510864,
+            "sequence": "the sun sets in the sky."
+          },
+          {
+            "token": 2225,
+            "token_str": "west",
+            "score": 0.19985881447792053,
+            "sequence": "the sun sets in the west."
+          },
+          {
+            "token": 2851,
+            "token_str": "morning",
+            "score": 0.15993860363960266,
+            "sequence": "the sun sets in the morning."
+          },
+          {
+            "token": 2264,
+            "token_str": "east",
+            "score": 0.14877623319625854,
+            "sequence": "the sun sets in the east."
+          },
+          {
+            "token": 3292,
+            "token_str": "distance",
+            "score": 0.05200018361210823,
+            "sequence": "the sun sets in the distance."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0814
+      }
+    },
+    {
+      "text": "A week has seven [MASK].",
+      "expected": "days",
+      "top1_correct": true,
+      "top5_correct": true,
+      "result": {
+        "input": "A week has seven [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 2420,
+            "token_str": "days",
+            "score": 0.5279591083526611,
+            "sequence": "a week has seven days."
+          },
+          {
+            "token": 3134,
+            "token_str": "weeks",
+            "score": 0.07742580026388168,
+            "sequence": "a week has seven weeks."
+          },
+          {
+            "token": 2847,
+            "token_str": "hours",
+            "score": 0.045585308223962784,
+            "sequence": "a week has seven hours."
+          },
+          {
+            "token": 2706,
+            "token_str": "months",
+            "score": 0.031238073483109474,
+            "sequence": "a week has seven months."
+          },
+          {
+            "token": 4178,
+            "token_str": "episodes",
+            "score": 0.017423521727323532,
+            "sequence": "a week has seven episodes."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0867
+      }
+    },
+    {
+      "text": "There are twelve months in a [MASK].",
+      "expected": "year",
+      "top1_correct": true,
+      "top5_correct": true,
+      "result": {
+        "input": "There are twelve months in a [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 2095,
+            "token_str": "year",
+            "score": 0.36147215962409973,
+            "sequence": "there are twelve months in a year."
+          },
+          {
+            "token": 5402,
+            "token_str": "cycle",
+            "score": 0.14893801510334015,
+            "sequence": "there are twelve months in a cycle."
+          },
+          {
+            "token": 5216,
+            "token_str": "row",
+            "score": 0.12191503494977951,
+            "sequence": "there are twelve months in a row."
+          },
+          {
+            "token": 2161,
+            "token_str": "season",
+            "score": 0.028784284368157387,
+            "sequence": "there are twelve months in a season."
+          },
+          {
+            "token": 2186,
+            "token_str": "series",
+            "score": 0.018201174214482307,
+            "sequence": "there are twelve months in a series."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0877
+      }
+    },
+    {
+      "text": "She drank a glass of [MASK].",
+      "expected": "water",
+      "top1_correct": true,
+      "top5_correct": true,
+      "result": {
+        "input": "She drank a glass of [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 2300,
+            "token_str": "water",
+            "score": 0.4275272488594055,
+            "sequence": "she drank a glass of water."
+          },
+          {
+            "token": 4511,
+            "token_str": "wine",
+            "score": 0.279880166053772,
+            "sequence": "she drank a glass of wine."
+          },
+          {
+            "token": 6501,
+            "token_str": "milk",
+            "score": 0.07480376958847046,
+            "sequence": "she drank a glass of milk."
+          },
+          {
+            "token": 5572,
+            "token_str": "tea",
+            "score": 0.02938016876578331,
+            "sequence": "she drank a glass of tea."
+          },
+          {
+            "token": 12327,
+            "token_str": "champagne",
+            "score": 0.02690635435283184,
+            "sequence": "she drank a glass of champagne."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0806
+      }
+    },
+    {
+      "text": "The student opened the [MASK] to read.",
+      "expected": "book",
+      "top1_correct": true,
+      "top5_correct": true,
+      "result": {
+        "input": "The student opened the [MASK] to read.",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 2338,
+            "token_str": "book",
+            "score": 0.6630290746688843,
+            "sequence": "the student opened the book to read."
+          },
+          {
+            "token": 14960,
+            "token_str": "notebook",
+            "score": 0.029063867405056953,
+            "sequence": "the student opened the notebook to read."
+          },
+          {
+            "token": 3485,
+            "token_str": "journal",
+            "score": 0.028802894055843353,
+            "sequence": "the student opened the journal to read."
+          },
+          {
+            "token": 2341,
+            "token_str": "door",
+            "score": 0.026788221672177315,
+            "sequence": "the student opened the door to read."
+          },
+          {
+            "token": 3259,
+            "token_str": "paper",
+            "score": 0.02539961040019989,
+            "sequence": "the student opened the paper to read."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0811
+      }
+    },
+    {
+      "text": "The teacher wrote on the [MASK].",
+      "expected": "board",
+      "top1_correct": false,
+      "top5_correct": false,
+      "result": {
+        "input": "The teacher wrote on the [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 3962,
+            "token_str": "spot",
+            "score": 0.09294109046459198,
+            "sequence": "the teacher wrote on the spot."
+          },
+          {
+            "token": 3395,
+            "token_str": "subject",
+            "score": 0.08668021112680435,
+            "sequence": "the teacher wrote on the subject."
+          },
+          {
+            "token": 3042,
+            "token_str": "phone",
+            "score": 0.040646132081747055,
+            "sequence": "the teacher wrote on the phone."
+          },
+          {
+            "token": 2067,
+            "token_str": "back",
+            "score": 0.026135632768273354,
+            "sequence": "the teacher wrote on the back."
+          },
+          {
+            "token": 3931,
+            "token_str": "page",
+            "score": 0.022052688524127007,
+            "sequence": "the teacher wrote on the page."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0803
+      }
+    },
+    {
+      "text": "The opposite of hot is [MASK].",
+      "expected": "cold",
+      "top1_correct": false,
+      "top5_correct": true,
+      "result": {
+        "input": "The opposite of hot is [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 2980,
+            "token_str": "hot",
+            "score": 0.39154693484306335,
+            "sequence": "the opposite of hot is hot."
+          },
+          {
+            "token": 3147,
+            "token_str": "cold",
+            "score": 0.34850719571113586,
+            "sequence": "the opposite of hot is cold."
+          },
+          {
+            "token": 4658,
+            "token_str": "cool",
+            "score": 0.022880379110574722,
+            "sequence": "the opposite of hot is cool."
+          },
+          {
+            "token": 4010,
+            "token_str": "warm",
+            "score": 0.008001657202839851,
+            "sequence": "the opposite of hot is warm."
+          },
+          {
+            "token": 3684,
+            "token_str": "heat",
+            "score": 0.007880053482949734,
+            "sequence": "the opposite of hot is heat."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0812
+      }
+    },
+    {
+      "text": "Birds can fly in the [MASK].",
+      "expected": "sky",
+      "top1_correct": false,
+      "top5_correct": false,
+      "result": {
+        "input": "Birds can fly in the [MASK].",
+        "top_k": 5,
+        "predictions": [
+          {
+            "token": 2621,
+            "token_str": "summer",
+            "score": 0.1444912701845169,
+            "sequence": "birds can fly in the summer."
+          },
+          {
+            "token": 2380,
+            "token_str": "park",
+            "score": 0.07798592746257782,
+            "sequence": "birds can fly in the park."
+          },
+          {
+            "token": 3467,
+            "token_str": "winter",
+            "score": 0.06570594757795334,
+            "sequence": "birds can fly in the winter."
+          },
+          {
+            "token": 2181,
+            "token_str": "area",
+            "score": 0.06553128361701965,
+            "sequence": "birds can fly in the area."
+          },
+          {
+            "token": 3500,
+            "token_str": "spring",
+            "score": 0.055799927562475204,
+            "sequence": "birds can fly in the spring."
+          }
+        ],
+        "model": "google-bert/bert-base-uncased",
+        "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+        "inference_seconds": 0.0842
+      }
+    }
+  ]
+}
