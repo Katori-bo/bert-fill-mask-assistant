@@ -98,6 +98,10 @@ tests/                         Unit and interface checks
 reports/project_report.pdf     Written project report
 ```
 
+## Comprehensive study report
+
+[Read the report](reports/project_report.pdf) for the topic's foundations, problem statement, design, methodology, implementation and measured demonstration results. It also compares related approaches and discusses current research, open challenges and future directions. The literature review was updated on 13 October 2026.
+
 ## References
 
 - [Devlin et al. (2019): BERT](https://aclanthology.org/N19-1423/)
